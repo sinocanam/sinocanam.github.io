@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="Images/tabicon.png">
+	<style>
+	body {
+		background-image: url("Images/redbg.jpg");
+		background-color: #ffffff;
+
+		background-size: round;
+	}
+	header{
+		background-color:Maroon;
+		height:100%;
+		margin:0;
+		padding:0
+	}
+	h5{
+		background-color:White;
+		height:100%;
+		margin:0;
+		padding:0
+	}
+footer {
+	width:100%;
+	height:70px;
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+
+	a {
+		color: #FFFFFF;
+	}
+	a:hover {
+		color:#000000;
+		background-color: white;
+	}
+	h1 {
+		color: black;
+		text-align: left;
+	}
+	h2{
+		color:black;
+		text-align: left;
+	}
+	h3{
+		text-align: right;
+	}
+	h4{
+		font-size:15px;
+		color:white;
+		text-align: center;
+	}
+	p {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		color:white;
+		background-color:maroon;
+		text-align: left;
+
+    padding-right: 60px;
+    padding-left: 60px;
+	}
+	</style>
+
+	<script language="JavaScript1.2">
+
+var howOften = 5; //number often in seconds to rotate
+var current = 0; //start the counter at 0
+var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+// place your images, text, etc in the array elements here
+var items = new Array();
+items[0]="<a href='Images/slider/006.jpg' target='_blank'><img alt='image0 (9K)' src=' Images/slider/006.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[1]="<a href='Images/slider/012.jpg' target='_blank'><img alt='image1 (9K)' src='Images/slider/012.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[2]="<a href='Images/slider/020.jpg' target='_blank'><img alt='image2 (9K)' src='Images/slider/020.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[3]="<a href='Images/slider/021.jpg' target='_blank'><img alt='image3 (9K)' src='Images/slider/021.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[4]="<a href='Images/slider/024.jpg' target='_blank'><img alt='image4 (9K)' src='Images/slider/024.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[5]="<a href='Images/slider/026.jpg' target='_blank'><img alt='image4 (9K)' src='Images/slider/026.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[6]="<a href='Images/slider/030.jpg' target='_blank'><img alt='image4 (9K)' src='Images/slider/030.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[7]="<a href='Images/slider/035.jpg' target='_blank'><img alt='image4 (9K)' src='Images/slider/035.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[8]="<a href='Images/slider/039.jpg' target='_blank'><img alt='image4 (9K)' src='Images/slider/039.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+items[9]="<a href='Images/slider/040.jpg' target='_blank'><img alt='image4 (9K)' src='Images/slider/040.jpg' height='450' width='800' border='0' /></a>"; //a linked image
+function rotater() {
+	document.getElementById("placeholder").innerHTML = items[current];
+	current = (current==items.length-1) ? 0 : current + 1;
+	setTimeout("rotater()",howOften*1000);
+}
+
+function rotater() {
+	if(document.layers) {
+		document.placeholderlayer.document.write(items[current]);
+		document.placeholderlayer.document.close();
+	}
+	if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+		if(document.all)
+			placeholderdiv.innerHTML=items[current];
+
+current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+setTimeout("rotater()",howOften*1000);
+}
+window.onload=rotater;
+//-->
+</script>
+</head>
+<body>
+	<div id="wrapper">
+
+		<div id = "header">
+			<center>
+			<h5><a href='Index.html' ><img alt='image0 (9K)' src=' Images/logo.png' height='100' width='250' border='0' /></a></h5>
+			</center>
+			<header>
+				<h4><br>
+					<a href="Index.html">Home</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="Gallery.html">Gallery</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="About.html">About Us</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="Contact.html">Contact Us</a></h4>
+					<p>
+					</div>
+					<center>
+						<div id = "content">
+
+
+
+
+								<layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
+							
+
+
+							<p>
+							Golf Course at Cdn$1,250,000, located in Vancouver Island (about 3 hours traffic time from Richmond), 30 acres land of which 4.5 acre being zoned commercial (can add in a winery/RV park/senior apartment etc), 9-hole, mountain view, a building there 1,580 sq.ft. On upper floor as living unit (2bedrooms, 2 bathrooms, large kitchen & living room and patio). and 1,580 sq.ft. on ground floor as pro shop and 30-seat (can add to 50 seats) club house, storage sheds and power carts and lawn mowers etc included, facing highway with 1,500,000 cars passing by every year, 5-10 minutes to tourist resort and lake from and shopping amenities with 3-4 liquor licences, outdoor commercial BBQ stove.
+Husband & wife operation for 11 years, profit after netting off operation and living costs being about $30,000/year (much more room to grow by hiring 1 or 2 more helpers, or by adding driving ranges). </p>
+						</div>
+					</center>
+
+
+
+					<div id = "footer">
+						<footer>
+							<header>Webmaster : K Cheng
+								<br>Contact information: <a href="mailto:sinocanamets@yahoo.ca">sinocanamets@yahoo.ca</a></header></div>
+							</footer>
+						</div>
+					</body>
+					</html>
