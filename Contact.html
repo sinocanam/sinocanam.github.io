@@ -96,6 +96,24 @@ setTimeout("rotater()",howOften*1000);
 window.onload=rotater;
 //-->
 </script>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+
 </head>
 <body>
 	<div id="wrapper">
@@ -132,7 +150,8 @@ email:    ComoxCanadAsia@yahoo.ca
 
 <br>
 Mail :     26072 - 8000  No.3 Road, Richmond, BC, Canada V6Y 3V3
-
+<br>
+<div id="googleMap" style="width:500px;height:380px;"></div>
 						</div>
 					</center>
 
